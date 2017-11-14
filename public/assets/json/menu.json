@@ -1,0 +1,24 @@
+{
+    "sites": [
+        {
+            "display": "HOME",
+            "url": "http://ec2-52-26-244-189.us-west-2.compute.amazonaws.com/school/index.html"
+        },
+        {
+            "display": "ASSIGNMENTS",
+            "url": "http://ec2-52-26-244-189.us-west-2.compute.amazonaws.com/school/json.html"
+        },
+        {
+            "display": "PAPA PIZZA",
+            "url": "http://ec2-52-26-244-189.us-west-2.compute.amazonaws.com/school/papa.html"
+        },
+        {
+            "display": "FLIPPING MENUS",
+            "url": "http://ec2-52-26-244-189.us-west-2.compute.amazonaws.com/school/menu.html"
+		},
+        {
+            "display": "ACME SITE",
+            "url": "http://ec2-52-26-244-189.us-west-2.compute.amazonaws.com/school/closure.html"
+		}
+    ]
+}

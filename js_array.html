@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+var list = [{
+"display": "HTML Tutorial",
+"url": "http://www.w3schools.com/html/default.asp"
+},
+{
+"display": "CSS Tutorial",
+"url": "http://www.w3schools.com/css/default.asp"
+},
+{
+"display": "JavaScript Tutorial",
+"url": "http://www.w3schools.com/js/default.asp"
+},
+{
+"display": "jQuery Tutorial",
+"url": "http://www.w3schools.com/jquery/default.asp"
+},
+{
+"display": "JSON Tutorial",
+"url": "http://www.w3schools.com/json/default.asp"
+},
+{
+"display": "AJAX Tutorial",
+"url": "http://www.w3schools.com/ajax/default.asp"
+},
+{
+"display": "SQL Tutorial",
+"url": "http://www.w3schools.com/sql/default.asp"
+},
+{
+"display": "PHP Tutorial",
+"url": "http://www.w3schools.com/php/default.asp"
+},
+{
+"display": "XML Tutorial",
+"url": "http://www.w3schools.com/xml/default.asp"
+},
+{
+"display": "JS OOP ALERT",
+"url": "JSReview/index.html"
+}];
+
+//var sites = JSON.parse(data);
+function showSites(sites){
+var output = "";
+for (var i=0; i<sites.length; i++) {
+	output += "<a href='" + sites[i].url + "'>" + sites[i].display + "</a><br>";
+}
+document.getElementById("output").innerHTML = output;
+}
+
+</script>
+</head>
+<body onLoad="showSites(list)">
+
+<h1>Homework Assignments(javascript array)</h1>
+<div id="output">
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("http://code.jquery.com/ui/1.11.4/themes/dark-hive/jquery-ui.css");
+@import url("/school/public/assets/stylesheets/css/bootstrap.min.css");
+@import url("/school/public/assets/stylesheets/css/bootstrap.css");
+
+@import url("/school/public/assets/stylesheets/css/glyphicons-bootstrap.css");
+@import url("/school/public/assets/stylesheets/css/glyphicons.css");
+@import url("/school/public/assets/stylesheets/css/glyphicons-social.css");
+@import url("/school/public/assets/stylesheets/css/glyphicons-halflings.css");
+@import url("/school/public/assets/stylesheets/css/glyphicons-filetypes.css");
+
+@import url("/school/public/assets/stylesheets/less/site.less");
+@import url("/school/public/assets/stylesheets/less/reset.less");
+@import url("/school/public/assets/stylesheets/less/glyphicons.less");
+@import url("/school/public/assets/stylesheets/less/glyphicons-social.less");
+@import url("/school/public/assets/stylesheets/less/glyphicons-halflings.less");
+@import url("/school/public/assets/stylesheets/less/glyphicons-filetypes.less");
+
+@import url("/school/public/assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css");
+@import url("/school/public/assets/fonts/font-awesome-4.3.0/css/font-awesome.css");

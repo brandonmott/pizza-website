@@ -1,0 +1,509 @@
+{
+  "pizza": {
+    "customer": {
+      "form": {
+        "id": "newUserForm",
+        "action": "#",
+        "method": "POST"
+      },
+      "div": [
+        {
+          "head": "customer",
+          "class": ".col-xs-12 col-sm-12 .col-md-3 col-lg-4"
+        },
+        {
+          "head": "Customer",
+          "class": "panel panel-default panel-success"
+        },
+        {
+          "head": "New customer sign up",
+          "class": "panel-heading"
+        }
+      ],
+      "input": [
+        {
+          "type": "text",
+          "name": "name",
+          "title": "Please enter full name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "name": "phone",
+          "title": "Please enter phone number",
+          "label": "Phone"
+        },
+        {
+          "type": "text",
+          "name": "email",
+          "title": "Please enter your email",
+          "label": "Email"
+        },
+        {
+          "type": "text",
+          "name": "address",
+          "title": "Please enter your home address",
+          "label": "Address"
+        },
+        {
+          "type": "text",
+          "name": "city",
+          "title": "Please enter the city you live in",
+          "label": "City"
+        },
+        {
+          "type": "text",
+          "name": "zip",
+          "title": "Please enter your zip code",
+          "label": "Zip"
+        },
+        {
+          "type": "text",
+          "name": "username",
+          "title": "Please enter your username",
+          "label": "Username <br>(Use this to log in to your account)"
+        },
+        {
+          "type": "text",
+          "name": "password1",
+          "title": "Please enter your password",
+          "label": "Password"
+        },
+        {
+          "type": "text",
+          "name": "password2",
+          "title": "Please re-enter your password",
+          "label": "Confirm Password"
+        }
+      ],
+      "buttons": [
+        {
+          "type": "submit",
+          "name": "signUp",
+          "id": "signUp",
+          "label": "Sign up",
+          "class": "btn btn-success",
+          "spanStyle": "color:#FFFFFF;",
+          "spanClass": "glyphicons glyphicons-check"
+        },
+        {
+          "type": "",
+          "name": "signIn",
+          "id": "signIn",
+          "label": "Sign in",
+          "class": "btn btn-primary",
+          "spanStyle": "color:#FFFFFF;",
+          "spanClass": "glyphicons glyphicons-new-window"
+        }
+      ]
+    },
+    "size": {
+      "form": {
+        "id": "orderForm",
+        "action": "#",
+        "method": "POST"
+      },
+      "div": [
+        {
+          "head": "size",
+          "class": "col-xs-12 col-sm-4 col-md-2 col-lg-2"
+        },
+        {
+          "head": "Size",
+          "class": "panel panel-default panel-warning"
+        },
+        {
+          "head": "What Size do you want your pizza?",
+          "class": "panel-heading"
+        }
+      ],
+      "input": [
+        {
+          "type": "radio",
+          "name": "size",
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "type": "radio",
+          "name": "size",
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "type": "radio",
+          "name": "size",
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "type": "radio",
+          "name": "size",
+          "value": "family",
+          "label": "Family"
+        }
+      ]
+    },
+    "crust": {
+      "div": [
+        {
+          "head": "crust",
+          "class": "col-xs-12 col-sm-7 col-md-6 col-lg-6"
+        },
+        {
+          "head": "Crust",
+          "class": "panel panel-default panel-danger"
+        },
+        {
+          "head": "How do you like your crust?",
+          "class": "panel-heading"
+        }
+      ],
+      "input": [
+        {
+          "type": "select",
+          "value": "regular",
+          "label": "Regular"
+        },
+        {
+          "type": "select",
+          "value": "thin",
+          "label": "Thin"
+        },
+        {
+          "type": "select",
+          "value": "pretzel",
+          "label": "Pretzel"
+        },
+        {
+          "type": "select",
+          "value": "garlic",
+          "label": "Garlic"
+        },
+        {
+          "type": "select",
+          "value": "stuffed",
+          "label": "Stuffed"
+        },
+        {
+          "type": "select",
+          "value": "deepdish",
+          "label": "Deep Dish"
+        }
+      ],
+      "comment": {
+        "type": "textarea",
+        "title": "Any additional preferences",
+        "form": "orderForm",
+        "rows": "5",
+        "cols": "80",
+        "name": "comment",
+        "label": "Comment"
+      }
+    },
+    "images": {
+      "div": [
+        {
+          "class": "col-xs-10 col-s-10 col-md-5 col-lg-5 relative",
+          "id": "pizzaImage"
+        }
+      ],
+      "input": [
+        {
+          "style": "z-index: 1;",
+          "id": "img-crust",
+          "class": "img-stack",
+          "src": "crust2x.png",
+          "width": "475",
+          "height": "475",
+          "alt": "Crust",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 2;",
+          "id": "img-cheese",
+          "class": "img-stack",
+          "src": "cheese2x.png",
+          "width": "425",
+          "height": "425",
+          "alt": "Cheese",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 3; display: none;",
+          "id": "img-pepperoni",
+          "class": "img-stack",
+          "src": "pepperoni2x.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 4; display: none;",
+          "id": "img-anchovies",
+          "class": "img-stack",
+          "src": "anchovies2x.png",
+          "width": "370",
+          "height": "370",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 5; display: none;",
+          "id": "img-tomatoes",
+          "class": "img-stack",
+          "src": "tomatoes.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 6; display: none;",
+          "id": "img-pineapple",
+          "class": "img-stack",
+          "src": "pineapple2x.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 7; display: none;",
+          "id": "img-spinach",
+          "class": "img-stack",
+          "src": "spinach2x.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 8; display: none;",
+          "id": "img-garlic",
+          "class": "img-stack",
+          "src": "garlic2x.png",
+          "width": "475",
+          "height": "475",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 9; display: none;",
+          "id": "img-greenPeppers",
+          "class": "img-stack",
+          "src": "green-peppers.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 10; display: none;",
+          "id": "img-sausage",
+          "class": "img-stack",
+          "src": "sausage2x.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 11; display: none;",
+          "id": "img-olives",
+          "class": "img-stack",
+          "src": "olives2x.png",
+          "width": "390",
+          "height": "390",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 12; display: none;",
+          "id": "img-bacon",
+          "class": "img-stack",
+          "src": "bacon.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 13; display: none;",
+          "id": "img-mushrooms",
+          "class": "img-stack",
+          "src": "mushrooms2x.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 14; display: none;",
+          "id": "img-onions",
+          "class": "img-stack",
+          "src": "onions.png",
+          "width": "388",
+          "height": "388",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 15; display: none;",
+          "id": "img-ham",
+          "class": "img-stack",
+          "src": "ham2x.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        },
+        {
+          "style": "z-index: 16; display: none;",
+          "id": "img-jalapenos",
+          "class": "img-stack",
+          "src": "jalapenos.png",
+          "width": "400",
+          "height": "400",
+          "alt": "",
+          "type": "img"
+        }
+      ]
+    },
+    "topping": {
+      "div": [
+        {
+          "head": "toppings",
+          "class": "col-xs-12 col-sm-12 col-md-8 col-lg-8"
+        },
+        {
+          "head": "Toppings",
+          "class": "panel panel-default panel-info"
+        },
+        {
+          "head": "Build your own pizza, choose any toppings below",
+          "class": "panel-heading"
+        }
+      ],
+      "input": [
+        {
+          "type": "checkbox",
+          "name": "anchovies",
+          "value": "anchovies",
+          "label": "Anchovies",
+          "id": "anchovies"
+        },
+        {
+          "type": "checkbox",
+          "name": "bacon",
+          "value": "bacon",
+          "label": "Bacon",
+          "id": "bacon"
+        },
+        {
+          "type": "checkbox",
+          "name": "garlic",
+          "value": "garlic",
+          "label": "Garlic",
+          "id": "garlic"
+        },
+        {
+          "type": "checkbox",
+          "name": "greenPeppers",
+          "value": "greenPeppers",
+          "label": "Green Peppers",
+          "id": "greenPeppers"
+        },
+        {
+          "type": "checkbox",
+          "name": "ham",
+          "value": "ham",
+          "label": "Ham",
+          "id": "ham"
+        },
+        {
+          "type": "checkbox",
+          "name": "jalapenos",
+          "value": "jalapenos",
+          "label": "Jalapenos",
+          "id": "jalapenos"
+        },
+        {
+          "type": "checkbox",
+          "name": "mushrooms",
+          "value": "mushrooms",
+          "label": "Mushrooms",
+          "id": "mushrooms"
+        },
+        {
+          "type": "checkbox",
+          "name": "olives",
+          "value": "olives",
+          "label": "Olives",
+          "id": "olives"
+        },
+        {
+          "type": "checkbox",
+          "name": "onions",
+          "value": "onions",
+          "label": "Onions",
+          "id": "onions"
+        },
+        {
+          "type": "checkbox",
+          "name": "pepperoni",
+          "value": "pepperoni",
+          "label": "Pepperoni",
+          "id": "pepperoni"
+        },
+        {
+          "type": "checkbox",
+          "name": "pineapple",
+          "value": "pineapple",
+          "label": "Pinapple",
+          "id": "pineapple"
+        },
+        {
+          "type": "checkbox",
+          "name": "sausage",
+          "value": "sausage",
+          "label": "Sausage",
+          "id": "sausage"
+        },
+        {
+          "type": "checkbox",
+          "name": "spinach",
+          "value": "spinach",
+          "label": "Spinach",
+          "id": "spinach"
+        },
+        {
+          "type": "checkbox",
+          "name": "tomatoes",
+          "value": "tomatoes",
+          "label": "Tomatoes",
+          "id": "tomatoes"
+        }
+      ],
+      "buttons": [
+        {
+          "type": "submit",
+          "name": "submitOrder",
+          "label": "Order",
+          "class": "btn btn-success",
+          "spanStyle": "color:#FFFFFF;",
+          "spanClass": "glyphicons glyphicons-ok-2"
+        },
+        {
+          "type": "reset",
+          "name": "resetOrder",
+          "label": "Reset",
+          "class": "btn btn-danger",
+          "spanStyle": "color:#FFFFFF;",
+          "spanClass": "glyphicons glyphicons-remove-2"
+        }
+      ]
+    }
+  }
+}

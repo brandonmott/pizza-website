@@ -1,0 +1,261 @@
+/* CSS Document */
+.menu {
+	padding: 0px;
+	width: 90%;
+	min-width: 800px;
+	height: 150px;
+	margin: auto;
+	position: relative;
+	background: #999999;
+}
+.menu::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 12.5%;
+	height: 100%;
+	background: black;
+}
+.menu > a, .menu > a:link, .menu > a:visited {
+	color: #cc0000;
+	width: 14.285714%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	font-variant: small-caps;
+	background: #cccccc;
+	border: 2px solid #999999;
+	border-top-width: 4px;
+	border-bottom-width: 4px;
+	box-sizing: border-box;
+	position: relative;
+	-webkit-transition: width 0.5s ease;
+}
+.menu > a:first-child {
+	border-left-width: 4px;
+}
+.menu > a:last-child {
+	border-right-width: 4px;
+}
+.menu:hover > a {
+	width: 12.5%;
+}
+.menu:hover > a:hover {
+	width: 25%;
+}
+.menu > a > span {
+	width: 100%;
+	line-height: 150px;
+	text-align: center;
+	white-space: nowrap;
+	display: inline-block;
+	font-size: 15pt;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transition: all 0.5s ease;
+}
+.menu > a:hover > span {
+	font-size: 20pt;
+	-webkit-transform: rotate(360deg);
+}
+#helpico {
+	background: url(../../../../bruinbear.jpg) right bottom;
+	width: 32px;
+	height: 32px;
+	display: block;
+	float: right;
+}
+#firm {
+	float: left;
+}
+html {
+	background-color: royalblue;
+	padding: 0px;
+	margin: 0px;
+}
+#content, #header, #frameWrapper, .nav {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+#content {
+	width: 90%;
+	height: 100%;
+	max-width: 1040px;
+	margin: auto;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0px 10px 10px 10px;
+}
+#header {
+	bottom: auto;
+	width: 100%;
+	height: 150px;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#frameWrapper {
+	top: 150px;
+	padding: 20px 0px;/*width: 100%;*/
+
+                /*box-sizing: border-box;*/
+
+}
+#frame {
+	width: 100%;
+	height: 100%;
+	border: 4px solid #999999;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: rgba;
+}
+#title {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 50%;
+	transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+#title span {
+	display: table-cell;
+	width: 1%;
+	vertical-align: middle;
+	text-align: center;
+	transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-webkit-transition: all 0.7s ease;
+}
+#title span:first-child {
+	font-size: 44pt;
+	font-variant: small-caps;
+}
+#title span:nth-child(2) {
+	font-size: 28pt;
+	padding-top: 10px;
+}
+.nav {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	height: 50%;
+	top: auto;
+	margin: auto;
+	background: #999999;
+	border: 2px solid #999999;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	transition: height 0.5s ease;
+	-ms-transition: height 0.5s ease;
+	-moz-transition: height 0.5s ease;
+	-webkit-transition: height 0.5s ease;
+}
+.nav > .navCell,  .nav > .navCell:link,  .nav > .navCell:visited {
+	position: relative;
+	display: table-cell;
+	width: 1%;
+	height: 100%;
+	color: #000000;
+	overflow: hidden;
+	font-variant: small-caps;
+	background: #cccccc;
+	border: 2px solid #999999;
+	/*box-sizing: border-box;*/
+
+	text-align: center;
+	vertical-align: middle;
+	transition: width 0.5s ease;
+	-ms-transition: width 0.5s ease;
+	-moz-transition: width 0.5s ease;
+	-webkit-transition: width 0.5s ease;
+}
+.nav > .navCell:hover {
+	width: 2%;
+}
+.nav > .navCell > .navCellInner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.nav > .navCell > .navCellInner > span {
+	position: absolute;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 12pt;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(0deg);
+	-ms-transform: translate(-50%, -50%) rotate(0deg);
+	-moz-transform: translate(-50%, -50%) rotate(0deg);
+	-webkit-transform: translate(-50%, -50%) rotate(0deg);
+	transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-webkit-transition: all 0.7s ease;
+}
+.nav > .navCell:hover > .navCellInner > span {
+	font-size: 20pt;
+	transform: translate(-50%, -50%) rotate(360deg);
+	-ms-transform: translate(-50%, -50%) rotate(360deg);
+	-moz-transform: translate(-50%, -50%) rotate(360deg);
+	-webkit-transform: translate(-50%, -50%) rotate(360deg);
+}
+
+@media (max-width: 960px) {
+#title {
+	height: 25%;
+}
+#title span:first-child {
+	font-size: 24pt;
+}
+#title span:nth-child(2) {
+	font-size: 18pt;
+	padding-top: 5px;
+}
+.nav {
+	height: 75%;
+}
+.nav > .navCell:hover {
+	width: 5%;
+}
+.nav > .navCell > .navCellInner > span {
+	transform: translate(-50%, -50%) rotate(-90deg);
+	-ms-transform: translate(-50%, -50%) rotate(-90deg);
+	-moz-transform: translate(-50%, -50%) rotate(-90deg);
+	-webkit-transform: translate(-50%, -50%) rotate(-90deg);
+}
+.nav > .navCell:hover > .navCellInner > span {
+	font-size: 18pt;
+	transform: translate(-50%, -50%) rotate(360deg);
+	-ms-transform: translate(-50%, -50%) rotate(360deg);
+	-moz-transform: translate(-50%, -50%) rotate(360deg);
+	-webkit-transform: translate(-50%, -50%) rotate(360deg);
+}
+}
+
+@media (max-width: 380px) {
+#content {
+	width: 100%;
+}
+#header {
+	padding: 0px 5px;
+}
+.nav {
+	left: 5px;
+}
+#frameWrapper {
+	padding: 5px;
+}
+}

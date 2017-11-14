@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+        
+	function Me(first, last){
+			this.first = first;
+			this.last = last;
+	}
+	Me.prototype.fullName = function(){
+		return this.first + ' ' + this.last;
+	}
+	
+	function start() {
+		var my = new Me("Brandon", "Mott");
+		function sayHello() {
+			alert(my.fullName())
+		}
+		sayHello();
+	}
+	start();
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
